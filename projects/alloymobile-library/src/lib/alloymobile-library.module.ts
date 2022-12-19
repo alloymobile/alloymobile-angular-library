@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
@@ -38,7 +38,11 @@ import { ForgetComponent } from './organ/forget/forget.component';
     LinkComponent,
     NavbarComponent,
     SidebarComponent,
-    TextboxComponent
-  ]
+    TextboxComponent,
+    LoginComponent,
+    RegisterComponent,
+    ForgetComponent
+  ],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class AlloymobileLibraryModule { }

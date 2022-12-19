@@ -13,5 +13,10 @@ export * from './lib/tissue/navbar/navbar.component';
 export * from './lib/tissue/navbar/navbar.model';  
 export * from './lib/tissue/sidebar/sidebar.component';
 export * from './lib/tissue/sidebar/sidebar.model';  
-
+export * from './lib/cell/textbox/textbox.component';
+export * from './lib/cell/textbox/textbox.model';
+export * from './lib/organ/login/login.component';
+export * from './lib/organ/login/login.model';
+export * from './lib/organ/register/register.component';
+export * from './lib/organ/forget/forget.component';
 

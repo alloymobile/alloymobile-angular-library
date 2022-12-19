@@ -38,7 +38,7 @@
     "className":"list-group h-100",
     "sideLink":
     [
-      {"id":1,"name":"Home","className":"list-group-item list-group-item-action","link":"","icon":{"id":1,"icon":"faHome","size":"lg","spin":false,"className":""}},
+      {"id":1,"name":"Login","className":"list-group-item list-group-item-action","link":"login","icon":{"id":1,"icon":"faUser","size":"lg","spin":false,"className":""}},
       {"id":2,"name":"About us","className":"list-group-item list-group-item-action","link":"about","icon":{"id":2,"icon":"faUser","size":"lg","spin":false,"className":""}},
       {"id":3,"name":"Gallery","className":"list-group-item list-group-item-action","link":"gallery","icon":{"id":3,"icon":"faCamera","size":"lg","spin":false,"className":""}},
       {"id":4,"name":"Blog","className":"list-group-item list-group-item-action","link":"blog","icon":{"id":4,"icon":"faBlog","size":"lg","spin":false,"className":""}},

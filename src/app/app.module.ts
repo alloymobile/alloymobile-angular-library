@@ -1,5 +1,5 @@
-import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { AlloymobileLibraryModule } from 'projects/alloymobile-library/src/public-api';
 
@@ -23,10 +23,14 @@ import { TextboxPageComponent } from './textbox-page/textbox-page.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AlloymobileLibraryModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    AlloymobileLibraryModule
   ],
   providers: [],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
