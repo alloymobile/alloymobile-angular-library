@@ -11,6 +11,7 @@ export class AppComponent {
   title = 'alloymobile-angular-library';
   sideBar: AppSideBar;
   navBar: AppNavBar;
+  selected = "cell";
   constructor(){
     this.sideBar = new AppSideBar(AppDB.cellBar) 
     this.navBar =  new AppNavBar(AppDB.navBar);
@@ -18,12 +19,15 @@ export class AppComponent {
   setActive(comp: string){
     switch(comp){
       case "cell":
+        this.selected = "cell";
         this.sideBar = new AppSideBar(AppDB.cellBar) 
         break;
       case "tissue":
+        this.selected = "tissue";
         this.sideBar = new AppSideBar(AppDB.tissueBar) 
         break;
       case "organ":
+        this.selected = "organ";
         this.sideBar = new AppSideBar(AppDB.organBar) 
         break;      
     }

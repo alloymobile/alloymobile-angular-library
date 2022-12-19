@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Login } from 'projects/alloymobile-library/src/public-api';
+import { Login } from 'alloymobile-library';
 
 @Component({
   selector: 'app-login-page',
@@ -13,5 +13,7 @@ export class LoginPageComponent {
   ngOnInit(): void {
   }
 
-  onLogin(client){}
+  onLogin(client: Login){
+    console.log(client);
+  }
 }

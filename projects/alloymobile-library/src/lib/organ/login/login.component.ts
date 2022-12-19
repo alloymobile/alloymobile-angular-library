@@ -1,6 +1,7 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AppIcon } from '../../cell/icon/icon.model';
+import { AppLink } from '../../cell/link/link.model';
 import { Login } from './login.model';
 
 @Component({
@@ -12,6 +13,7 @@ export class LoginComponent {
   _login: Login = new Login();
   loginForm: FormGroup;
   loadingIcon = new AppIcon({id:5,icon:"faSpinner",size:"lg",spin:false,className:""});
+  loginLink = new AppLink({id:1,name:"Sign in",className:"text-dark text-decoration-none d-flex flex-column align-items-center",link:"login",icon:{id:1,icon:"faRightToBracket",size:"2x",spin:false,className:""}});
   @Input() set login(login: Login){
     this._login = login;
   };
@@ -38,15 +40,17 @@ export class LoginComponent {
   }
 
   loginClient(){
+    this._login.submitted = true;
     if (this.loginForm.valid) {
+      this._login.submitted = false;
       this._login.error ="";
       this._login.email = this.formControl.email.value;
       this._login.password = this.formControl.password.value;
       this.loadingIcon.spin = true;
       this.output.emit(this._login);
     }else{
-      this._login.error = "There are form errors please fix them"
-      this._login.submitted = false;
+      this._login.error = "There are form errors please fix them";
+      this.loadingIcon.spin = false;
     }
   }
 }

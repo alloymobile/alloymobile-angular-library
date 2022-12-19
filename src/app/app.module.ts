@@ -1,4 +1,4 @@
-import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
+import { NgModule} from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { AlloymobileLibraryModule } from 'projects/alloymobile-library/src/public-api';
@@ -10,6 +10,9 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { IconPageComponent } from './icon-page/icon-page.component';
 import { LinkPageComponent } from './link-page/link-page.component';
 import { TextboxPageComponent } from './textbox-page/textbox-page.component';
+import { LoginPageComponent } from './login-page/login-page.component';
+import { RegisterPageComponent } from './register-page/register-page.component';
+import { ForgetPageComponent } from './forget-page/forget-page.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { TextboxPageComponent } from './textbox-page/textbox-page.component';
     ButtonPageComponent,
     LinkPageComponent,
     IconPageComponent,
-    TextboxPageComponent
+    TextboxPageComponent,
+    LoginPageComponent,
+    RegisterPageComponent,
+    ForgetPageComponent,
   ],
   imports: [
     BrowserModule,
@@ -28,9 +34,6 @@ import { TextboxPageComponent } from './textbox-page/textbox-page.component';
     AlloymobileLibraryModule
   ],
   providers: [],
-  schemas: [
-    CUSTOM_ELEMENTS_SCHEMA
-  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

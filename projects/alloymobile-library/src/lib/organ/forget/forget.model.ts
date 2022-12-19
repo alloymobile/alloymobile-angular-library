@@ -1,41 +1,34 @@
 import { AppLink } from "../../cell/link/link.model";
 
-export class Login{
+export class Forget{
     email: string;
-    password: string;
     submitted: boolean;
     error: string;
     showSpinner: boolean;
-    rememberMe: boolean;
+    login: AppLink;
     register: AppLink;
-    forget: AppLink;
   
-    static createDTO(login: Login){
+    static createDTO(forget: Forget){
       return {
-          email: login.email,
-          password: login.password
+          email: forget.email
       };
   }
   
     constructor(response?: any){
       if(response){
         this.email = response.email ? response.email : "";
-        this.password = response.password ? response.password : "";
         this.submitted = response.submitted ? response.submitted : false;
         this.error = response.error ? response.error : "";
-        this.rememberMe = response.rememberMe ? response.rememberMe : false;
         this.showSpinner = response.showSpinner ? response.showSpinner : false;
-        this.register = response.register ? new AppLink(response.register) : new AppLink();
-        this.forget = response.forget ?  new AppLink(response.forget) : new AppLink();
+        this.login = response.login ?  new AppLink(response.login) : new AppLink();
+        this.register = response.register ?  new AppLink(response.register) : new AppLink();
       }else{
         this.email = "";
-        this.password = "";
         this.submitted = false;
         this.error = "";
-        this.rememberMe = false;
         this.showSpinner = false;
-        this.register = new AppLink();
-        this.forget = new AppLink();
+        this.login = new AppLink();
+        this.register =  new AppLink();
       }
     }
   }

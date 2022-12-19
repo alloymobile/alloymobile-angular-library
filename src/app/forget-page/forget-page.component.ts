@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Forget } from 'alloymobile-library';
 
 @Component({
   selector: 'app-forget-page',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./forget-page.component.css']
 })
 export class ForgetPageComponent {
+  client: Forget = new Forget();
+  constructor() { }
 
+  ngOnInit(): void {
+  }
+
+  onForget(client: Forget){
+    console.log(client);
+  }
 }
