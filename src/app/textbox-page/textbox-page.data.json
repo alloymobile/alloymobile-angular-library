@@ -1,8 +1,8 @@
 {
     "text1":
     {
-        "id":"1","name":"","className":"","type":"","placeholder":"",
-        "label":{"id":"1","className":""},
-        "icon":{"id":1,"icon":"faHome","size":"lg","spin":false,"className":""}
+        "id":"1","name":"","className":"form-control border-0 bg-light rounded-end ps-1","typeName":"text","placeholder":"john@example.com",
+        "label":{"id":"1","className":"form-label","text":"E-Mail"},
+        "icon":{"id":1,"icon":"faEnvelope","size":"lg","spin":false,"className":""}
     }
 }

@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { AppTextBox } from './textbox.model';
 
 @Component({
@@ -12,8 +12,14 @@ export class TextboxComponent {
   	this._textbox = textbox;
   }
 
+  @Output() output: EventEmitter<AppTextBox> = new EventEmitter<AppTextBox>();
+
   constructor() { 
     this._textbox = new AppTextBox();
+  }
+
+  onChange(text){
+    console.log(text);
   }
 
 }
