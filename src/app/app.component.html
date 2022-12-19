@@ -1,2 +1,22 @@
-<h1>Hello</h1>
-<app-icon [icon]="icon"></app-icon>
+<app-navbar [navBar]="navBar"></app-navbar>
+<div class="row d-flex h-100 g-0">
+  <div class="sidebar bg-white">
+  <app-sidebar [sideBar]="sideBar"></app-sidebar>
+  </div>
+  <div class="main">
+    <div class="container">
+      <ul class="nav nav-pills nav-fill">
+          <li class="nav-item">
+            <button class="nav-link active" aria-current="page" (click)="setActive('cell')" >Cell</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" (click)="setActive('tissue')" >Tissue</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" (click)="setActive('organ')" >Organ</button>
+          </li>
+        </ul>
+        <router-outlet></router-outlet>  
+    </div>
+  </div>
+</div>

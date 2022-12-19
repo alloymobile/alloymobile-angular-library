@@ -1,0 +1,26 @@
+<div class="container">
+      <div class="row">
+        <div class="col-sm-6 text-center">
+            <h4>Icons</h4>
+            <div class="row">
+                <div class="col-2 p-2 text-center border rounded" *ngFor="let i of icons">
+                    <button class="btn btn-outline-dark" (click)="iconClick(i)">
+                        <app-icon [icon]="i"></app-icon>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 text-center text-wrap">
+            <h4>Usage</h4>
+            <h6>{{usageString}}</h6>
+            <h6>{{iconString}}</h6>
+            <div class="form-group">
+                <label for="textbox">Try Out</label>
+                <input type="text" class="form-control" id="textbox" [(ngModel)]="exampleData" (blur)="update()">
+            </div>
+            <app-icon [icon]="example"></app-icon>
+        </div>
+    </div>
+</div>
+
+

@@ -15,8 +15,4 @@ export class ButtonComponent {
   constructor() {
     this._button = new AppButton();
   }
-
-  ngOnInit(): void {
-  }
-
 }
