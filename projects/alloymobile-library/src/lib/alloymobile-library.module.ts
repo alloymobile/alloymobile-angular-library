@@ -9,7 +9,6 @@ import { NavbarComponent } from './tissue/navbar/navbar.component';
 import { SidebarComponent } from './tissue/sidebar/sidebar.component';
 
 
-
 @NgModule({
   declarations: [
     IconComponent,

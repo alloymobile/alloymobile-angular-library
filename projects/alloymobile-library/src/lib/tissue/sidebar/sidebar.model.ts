@@ -1,4 +1,4 @@
-import { AppLink } from "alloymobile-library";
+import { AppLink } from "../../cell/link/link.model";
 
 export class AppSideBar {
     id: number;
