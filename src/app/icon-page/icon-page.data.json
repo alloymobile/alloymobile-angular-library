@@ -12,7 +12,7 @@
         {"id":9,"icon":"faYoutube","size":"lg","spin":false,"className":""},
         {"id":10,"icon":"faIcons","size":"lg","spin":false,"className":""},
         {"id":11,"icon":"faAddressCard","size":"lg","spin":false,"className":""},
-        {"id":12,"icon":"faAsymmetrik","size":"lg","spin":false,"className":""},
+        {"id":12,"icon":"faKeyboard","size":"lg","spin":false,"className":""},
         {"id":13,"icon":"faAt","size":"lg","spin":false,"className":""},
         {"id":14,"icon":"faBlog","size":"lg","spin":false,"className":""},
         {"id":15,"icon":"faBorderAll","size":"lg","spin":false,"className":""},

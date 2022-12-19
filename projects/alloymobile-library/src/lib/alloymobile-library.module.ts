@@ -5,6 +5,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ButtonComponent } from './cell/button/button.component';
 import { IconComponent } from './cell/icon/icon.component';
 import { LinkComponent } from './cell/link/link.component';
+import { TextboxComponent } from './cell/textbox/textbox.component';
 import { NavbarComponent } from './tissue/navbar/navbar.component';
 import { SidebarComponent } from './tissue/sidebar/sidebar.component';
 
@@ -15,7 +16,8 @@ import { SidebarComponent } from './tissue/sidebar/sidebar.component';
     ButtonComponent,
     LinkComponent,
     NavbarComponent,
-    SidebarComponent
+    SidebarComponent,
+    TextboxComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +29,8 @@ import { SidebarComponent } from './tissue/sidebar/sidebar.component';
     ButtonComponent,
     LinkComponent,
     NavbarComponent,
-    SidebarComponent
+    SidebarComponent,
+    TextboxComponent
   ]
 })
 export class AlloymobileLibraryModule { }

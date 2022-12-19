@@ -1,6 +1,6 @@
 import { IconDefinition, SizeProp } from "@fortawesome/fontawesome-svg-core";
 import { faApple, faAsymmetrik, faFacebook, faGoogle, faInstagram, faLinkedin, faMicrosoft, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
-import { faAddressCard, faAt, faBlog, faBorderAll, faCamera, faChalkboardTeacher, faDollarSign, faDownload, faEdit, faEnvelope, faEnvelopeOpenText, faHome, faIcons, faLink, faList, faLocation, faLock, faPhoneAlt, faPlus, faRightToBracket, faSearch, faSpinner, faTh, faToggleOff, faTrashAlt, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faAddressCard, faAt, faBlog, faBorderAll, faCamera, faChalkboardTeacher, faDollarSign, faDownload, faEdit, faEnvelope, faEnvelopeOpenText, faHome, faIcons, faKeyboard, faLink, faList, faLocation, faLock, faPhoneAlt, faPlus, faRightToBracket, faSearch, faSpinner, faTh, faToggleOff, faTrashAlt, faUser } from '@fortawesome/free-solid-svg-icons';
 
 export class AppIcon{
   id: number;
@@ -96,7 +96,9 @@ export class AppIcon{
       case "faLink":
         return faLink;    
       case "faToggleOff":
-        return faToggleOff;                
+        return faToggleOff; 
+      case "faKeyboard":
+        return faKeyboard;                  
       default:
         return faAsymmetrik;
     }

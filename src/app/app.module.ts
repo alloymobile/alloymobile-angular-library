@@ -9,6 +9,7 @@ import { ButtonPageComponent } from './button-page/button-page.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { IconPageComponent } from './icon-page/icon-page.component';
 import { LinkPageComponent } from './link-page/link-page.component';
+import { TextboxPageComponent } from './textbox-page/textbox-page.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { LinkPageComponent } from './link-page/link-page.component';
     HomePageComponent,
     ButtonPageComponent,
     LinkPageComponent,
-    IconPageComponent
+    IconPageComponent,
+    TextboxPageComponent
   ],
   imports: [
     BrowserModule,
