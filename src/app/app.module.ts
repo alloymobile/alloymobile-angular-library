@@ -13,6 +13,7 @@ import { TextboxPageComponent } from './textbox-page/textbox-page.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { RegisterPageComponent } from './register-page/register-page.component';
 import { ForgetPageComponent } from './forget-page/forget-page.component';
+import { CardDashboardPageComponent } from './card-dashboard-page/card-dashboard-page.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { ForgetPageComponent } from './forget-page/forget-page.component';
     LoginPageComponent,
     RegisterPageComponent,
     ForgetPageComponent,
+    CardDashboardPageComponent,
   ],
   imports: [
     BrowserModule,

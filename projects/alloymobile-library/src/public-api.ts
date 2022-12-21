@@ -15,10 +15,13 @@ export * from './lib/tissue/sidebar/sidebar.component';
 export * from './lib/tissue/sidebar/sidebar.model';  
 export * from './lib/cell/textbox/textbox.component';
 export * from './lib/cell/textbox/textbox.model';
+export * from './lib/cell/card-dashboard/card-dashboard.component';
+export * from './lib/cell/card-dashboard/card-dashboard.model';
 export * from './lib/organ/login/login.component';
 export * from './lib/organ/login/login.model';
 export * from './lib/organ/register/register.component';
 export * from './lib/organ/register/register.model';
 export * from './lib/organ/forget/forget.component';
 export * from './lib/organ/forget/forget.model';
+
 

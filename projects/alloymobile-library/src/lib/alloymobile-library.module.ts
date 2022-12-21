@@ -12,6 +12,7 @@ import { SidebarComponent } from './tissue/sidebar/sidebar.component';
 import { LoginComponent } from './organ/login/login.component';
 import { RegisterComponent } from './organ/register/register.component';
 import { ForgetComponent } from './organ/forget/forget.component';
+import { CardDashboardComponent } from './cell/card-dashboard/card-dashboard.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { ForgetComponent } from './organ/forget/forget.component';
     TextboxComponent,
     LoginComponent,
     RegisterComponent,
-    ForgetComponent
+    ForgetComponent,
+    CardDashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +43,8 @@ import { ForgetComponent } from './organ/forget/forget.component';
     TextboxComponent,
     LoginComponent,
     RegisterComponent,
-    ForgetComponent
+    ForgetComponent,
+    CardDashboardComponent
   ]
 })
 export class AlloymobileLibraryModule { }

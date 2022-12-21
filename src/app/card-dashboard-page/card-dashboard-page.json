@@ -1,0 +1,6 @@
+[
+    {"id":1,"className":"card card-body bg-warning bg-opacity-15 p-4 h-100","count":"4","title":"Total Blogs","iconClass":"icon-lg rounded-circle bg-warning text-white mb-0","icon":{"id":1,"icon":"faBlog","size":"lg","spin":false,"className":""}},
+    {"id":2,"className":"card card-body bg-primary bg-opacity-15 p-4 h-100","count":"14","title":"Total Pictures","iconClass":"icon-lg rounded-circle bg-primary text-white mb-0","icon":{"id":1,"icon":"faCamera","size":"lg","spin":false,"className":""}},
+    {"id":3,"className":"card card-body bg-info bg-opacity-15 p-4 h-100","count":"3","title":"Total Teachings","iconClass":"icon-lg rounded-circle bg-info text-white mb-0","icon":{"id":1,"icon":"faChalkboardTeacher","size":"lg","spin":false,"className":""}},
+    {"id":4,"className":"card card-body bg-secondary bg-opacity-15 p-4 h-100","count":"12","title":"Total Donations","iconClass":"icon-lg rounded-circle bg-secondary text-white mb-0","icon":{"id":1,"icon":"faHome","size":"lg","spin":false,"className":""}}
+]

@@ -1,0 +1,24 @@
+
+<div class="container">
+    <div class="row mt-2">
+        <div class="col-sm-6 text-center border">
+            <h1>Dashboard Cards</h1>
+            <div class="col-sm-6 mx-auto m-2" *ngFor="let card of cards">
+                <app-card-dashboard [cardDashboard]="card"></app-card-dashboard>
+            </div>
+        </div>
+        <div class="col-sm-6 text-center border">
+            <h1>Usage</h1>
+            <h6>{{usageString}}</h6>
+            <h6>{{cardString}}</h6>
+            <div class="form-group">
+                <label for="textbox">Try Out</label>
+                <textarea type="text" class="form-control" id="textbox" rows="4" [(ngModel)]="exampleData" (blur)="update()"></textarea>
+            </div>
+            <div class="col-sm-6 m-2">
+                <app-card-dashboard [cardDashboard]="example"></app-card-dashboard>
+            </div>
+        </div>
+    </div>
+</div>
+

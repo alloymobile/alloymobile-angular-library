@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ButtonPageComponent } from './button-page/button-page.component';
+import { CardDashboardPageComponent } from './card-dashboard-page/card-dashboard-page.component';
 import { ForgetPageComponent } from './forget-page/forget-page.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { IconPageComponent } from './icon-page/icon-page.component';
@@ -17,7 +18,8 @@ const routes: Routes = [
   {path: "text",component: TextboxPageComponent},
   {path: "login",component: LoginPageComponent},
   {path: "register",component: RegisterPageComponent},
-  {path: "forget",component: ForgetPageComponent}
+  {path: "forget",component: ForgetPageComponent},
+  {path: "card-dashboard",component: CardDashboardPageComponent}
 ];
 
 @NgModule({
