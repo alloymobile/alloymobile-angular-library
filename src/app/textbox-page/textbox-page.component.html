@@ -1,1 +1,14 @@
-<app-textbox [textbox]="textbox1" ></app-textbox>
+<div class="container">
+    <div class="row mt-2">
+        <div class="col-sm-6 text-center border">
+            <h1>Dashboard Cards</h1>
+            <div class="m-2" *ngFor="let textbox of textboxes" >
+                <app-textbox [textbox]="textbox" (output)="gettext($event)"></app-textbox>
+            </div>
+        </div>
+        <div class="col-sm-6 text-center border">
+            <h1>Usage</h1>
+        </div>
+    </div>
+</div>
+

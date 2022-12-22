@@ -18,8 +18,4 @@ export class TextboxComponent {
     this._textbox = new AppTextBox();
   }
 
-  onChange(text){
-    console.log(text);
-  }
-
 }

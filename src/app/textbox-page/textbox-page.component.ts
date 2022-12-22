@@ -8,8 +8,12 @@ import TextboxDB from './textbox-page.data.json';
   styleUrls: ['./textbox-page.component.css']
 })
 export class TextboxPageComponent {
-  textbox1: AppTextBox;
+  textboxes: AppTextBox[];
   constructor(){
-    this.textbox1 = new AppTextBox(TextboxDB.text1);
+    this.textboxes = TextboxDB.map((textbox)=> new AppTextBox(textbox)) ;
+  }
+
+  gettext(text){
+    console.log(text);
   }
 }

@@ -14,6 +14,7 @@ import { LoginPageComponent } from './login-page/login-page.component';
 import { RegisterPageComponent } from './register-page/register-page.component';
 import { ForgetPageComponent } from './forget-page/forget-page.component';
 import { CardDashboardPageComponent } from './card-dashboard-page/card-dashboard-page.component';
+import { TablePageComponent } from './table-page/table-page.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { CardDashboardPageComponent } from './card-dashboard-page/card-dashboard
     RegisterPageComponent,
     ForgetPageComponent,
     CardDashboardPageComponent,
+    TablePageComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,5 @@
-import { CUSTOM_ELEMENTS_SCHEMA, NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
-import { ReactiveFormsModule } from '@angular/forms';
+import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -13,7 +13,7 @@ import { LoginComponent } from './organ/login/login.component';
 import { RegisterComponent } from './organ/register/register.component';
 import { ForgetComponent } from './organ/forget/forget.component';
 import { CardDashboardComponent } from './cell/card-dashboard/card-dashboard.component';
-
+import { TableComponent } from './tissue/table/table.component';
 
 @NgModule({
   declarations: [
@@ -26,13 +26,15 @@ import { CardDashboardComponent } from './cell/card-dashboard/card-dashboard.com
     LoginComponent,
     RegisterComponent,
     ForgetComponent,
-    CardDashboardComponent
+    CardDashboardComponent,
+    TableComponent
   ],
   imports: [
     BrowserModule,
     FontAwesomeModule,
     RouterModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule
   ],
   exports: [
     IconComponent,
@@ -44,7 +46,8 @@ import { CardDashboardComponent } from './cell/card-dashboard/card-dashboard.com
     LoginComponent,
     RegisterComponent,
     ForgetComponent,
-    CardDashboardComponent
+    CardDashboardComponent,
+    TableComponent
   ]
 })
 export class AlloymobileLibraryModule { }

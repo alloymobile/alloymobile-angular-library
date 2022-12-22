@@ -1,19 +1,20 @@
-<div>
-  <label [for]="_textbox.id" [class]="_textbox.label.className">{{
-    _textbox.label.text
-  }}</label>
-  <div class="input-group input-group-lg">
-    <span
-      class="input-group-text bg-light rounded-start border-0 text-secondary px-3"
+<div [class]="_textbox.className">
+  <input
+    [type]="_textbox.typeName"
+    [name]="_textbox.name"
+    class="form-control"
+    [id]="_textbox.id"
+    [placeholder]="_textbox.placeholder"
+    [(ngModel)]="_textbox.text"
+    (blur)="output.emit(_textbox)"
+  />
+  <span class="input-group-append">
+    <button
+      class="input-group-text"
+      type="button"
+      (click)="output.emit(_textbox)"
     >
-      <app-icon [icon]="_textbox.icon"></app-icon>
-    </span>
-    <input
-        [id]="_textbox.id"
-        [type]="_textbox.typeName"
-        [class]="_textbox.className"
-        [placeholder]="_textbox.placeholder"
-        (change)="onChange($event)"
-    />
-  </div>
+      <span class="icon"><app-icon [icon]="_textbox.icon"></app-icon></span>
+    </button>
+  </span>
 </div>

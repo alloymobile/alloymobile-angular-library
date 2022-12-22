@@ -8,6 +8,7 @@ import { IconPageComponent } from './icon-page/icon-page.component';
 import { LinkPageComponent } from './link-page/link-page.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { RegisterPageComponent } from './register-page/register-page.component';
+import { TablePageComponent } from './table-page/table-page.component';
 import { TextboxPageComponent } from './textbox-page/textbox-page.component';
 
 const routes: Routes = [
@@ -16,6 +17,7 @@ const routes: Routes = [
   {path: "link",component: LinkPageComponent},
   {path: "button",component: ButtonPageComponent},
   {path: "text",component: TextboxPageComponent},
+  {path: "table",component: TablePageComponent},
   {path: "login",component: LoginPageComponent},
   {path: "register",component: RegisterPageComponent},
   {path: "forget",component: ForgetPageComponent},
